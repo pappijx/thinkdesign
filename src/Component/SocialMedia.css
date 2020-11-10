@@ -1,0 +1,121 @@
+.socialmedia {
+  position: fixed;
+  top: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  animation: NameOfAnimation 1s 3s forwards;
+}
+
+@keyframes NameOfAnimation {
+  0% {
+    opacity: 0;
+    left: -100px;
+  }
+  100% {
+    left: 15px;
+    opacity: 1;
+  }
+}
+
+.socialmedia__holder {
+  list-style-type: none;
+}
+
+.socialmedia__holder li:nth-child(n) {
+  cursor: pointer;
+  position: relative;
+  transition: 425ms cubic-bezier(0.05, 0.65, 0.18, 1);
+  padding: 1em 1em;
+  margin-top: 10px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.socialmedia__holder li:nth-child(1) {
+  background-color: rgb(0, 136, 226);
+}
+.socialmedia__holder li:nth-child(2) {
+  background-color: rgb(85, 85, 85);
+}
+.socialmedia__holder li:nth-child(3) {
+  background-color: rgb(0, 119, 255);
+}
+.socialmedia__holder li:nth-child(4) {
+  background-color: rgb(255, 0, 140);
+}
+
+.socialmedia__holder li:nth-child(n):hover {
+  transition: 425ms cubic-bezier(0.05, 0.65, 0.18, 1);
+  transform: translate(20px, 0px);
+}
+
+.tooltip {
+  transition: 425ms cubic-bezier(0.05, 0.65, 0.18, 1);
+  position: absolute;
+  display: none;
+}
+
+.socialmedia__holder li:nth-child(n):hover .tooltip {
+  transition: 425ms cubic-bezier(0.05, 1, 0.18, 1);
+  display: block;
+  width: max-content;
+  left: 70px;
+  background-color: rgb(212, 212, 212);
+  padding: 2px 10px;
+  border-style: solid;
+  border-color: grey;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .socialmedia {
+    margin-top: 250px;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    animation: NameOfAnimation 1s 3s forwards;
+  }
+
+  @keyframes NameOfAnimation {
+    0% {
+      opacity: 0;
+      left: -300px;
+    }
+    100% {
+      left: 45%;
+      opacity: 1;
+    }
+  }
+
+  .socialmedia__holder {
+    list-style-type: none;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+  }
+
+  .socialmedia__holder li:nth-child(n):hover {
+    transition: 425ms cubic-bezier(0.05, 0.65, 0.18, 1);
+    transform: translate(0px, -20px);
+  }
+
+  .socialmedia__holder li:nth-child(n):hover .tooltip {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+}

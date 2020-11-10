@@ -1,0 +1,22 @@
+.contact {
+  margin-top: -50px;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin: 20px auto;
+}
+
+.form-control {
+  border: 2px grey solid;
+  padding: 4px;
+  outline: none;
+}

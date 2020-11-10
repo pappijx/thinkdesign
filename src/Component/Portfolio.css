@@ -1,0 +1,38 @@
+.portfolio {
+  padding-top: 50px;
+  width: 100%;
+  height: 700px;
+  text-align: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.portfolio::-webkit-scrollbar {
+  opacity: 0;
+  width: 0;
+}
+
+.portfolio > h1 {
+  font-size: 3em;
+  margin: 20px;
+}
+
+.portfolioDescription {
+  text-justify: distribute;
+  width: 500px;
+  font-size: 20px;
+  margin: auto;
+}
+
+.Projectscontainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 100px auto;
+  width: 80%;
+}
+
+.Projectscontainer > div {
+  flex: 0 50%;
+}
