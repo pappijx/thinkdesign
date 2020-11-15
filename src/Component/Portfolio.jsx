@@ -18,6 +18,7 @@ function Portfolio() {
             <div key={key}>
               <ProjectData
                 key={key}
+                src={data.src}
                 projectName={data.projectName}
                 description={data.description}
                 tech1={data.techUsed.tech1}

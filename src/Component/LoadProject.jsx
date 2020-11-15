@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./LoadProject.css";
 
-function LoadProject({ projectName, description, tech1, tech2, tech3 }) {
+function LoadProject({ projectName, src, description, tech1, tech2, tech3 }) {
   // useEffect(() => {
   //   document.addEventListener("mousemove", updateMouserPosition);
   //   return () => {
@@ -12,6 +12,7 @@ function LoadProject({ projectName, description, tech1, tech2, tech3 }) {
   return (
     <div className="loadProject">
       <div className="loadProject__card">
+        <img src={src} alt="" />
         <div className="card__header">
           <div className="card__title">{projectName}</div>
           <div className="card__nav">
@@ -21,6 +22,11 @@ function LoadProject({ projectName, description, tech1, tech2, tech3 }) {
           </div>
         </div>
         <div className="description">
+          <div className="techUser">
+            <li>{tech1}</li>
+            <li>{tech2}</li>
+            <li>{tech3}</li>
+          </div>
           <p>{description}</p>
         </div>
       </div>

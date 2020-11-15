@@ -31,44 +31,44 @@ function Contact() {
       <form id="contact-form" onSubmit={handleSubmit} className="form">
         <h1>Contact Form</h1>
         <div className="form-group">
-          <div>
+          <div className="label">
             <label htmlFor="name">Your Name</label>
           </div>
           <input
+            required
             className="form-control"
             type="text"
             name="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="Enter name here"
           />
         </div>
 
         <div className="form-group">
-          <div>
+          <div className="label">
             <label htmlFor="email">Email</label>
           </div>
           <input
             className="form-control"
+            required
             type="email"
             name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter name here"
           />
         </div>
 
         <div className="form-group">
-          <div>
+          <div className="label">
             <label htmlFor="name">Message </label>
           </div>
           <input
             className="form-control"
+            required
             type="text"
             name="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            placeholder="Enter name here"
           />
         </div>
         <button type="submit" className="submitBtn">
