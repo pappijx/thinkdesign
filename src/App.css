@@ -1,5 +1,5 @@
 .app {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .app__splashScreen {

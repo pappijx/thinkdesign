@@ -15,11 +15,6 @@ form {
   margin: 40px auto;
 }
 
-.form-group:focus-within div {
-  transition: 0.7s;
-  top: -20px;
-}
-
 .form-group:visited div {
   transition: 0.7s;
   top: -20px;
@@ -39,6 +34,15 @@ form {
   border: none;
   background-color: transparent;
   border-bottom: solid 2px rgb(199, 199, 199);
+}
+
+input:valid ~ .label {
+  top: -20px;
+}
+
+
+input:focus ~ .label {
+  top: -20px;
 }
 
 .submitBtn {

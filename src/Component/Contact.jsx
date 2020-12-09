@@ -31,10 +31,8 @@ function Contact() {
       <form id="contact-form" onSubmit={handleSubmit} className="form">
         <h1>Contact Form</h1>
         <div className="form-group">
-          <div className="label">
-            <label htmlFor="name">Your Name</label>
-          </div>
           <input
+            autocomplete="off"
             required
             className="form-control"
             type="text"
@@ -42,13 +40,16 @@ function Contact() {
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
+          <div className="label">
+            <label htmlFor="name">Your Name</label>
+          </div>
+
+          <div className="error">1</div>
         </div>
 
         <div className="form-group">
-          <div className="label">
-            <label htmlFor="email">Email</label>
-          </div>
           <input
+            autocomplete="off"
             className="form-control"
             required
             type="email"
@@ -56,13 +57,15 @@ function Contact() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
+          <div className="label">
+            <label htmlFor="email">Email</label>
+          </div>
+          <div className="error">1</div>
         </div>
 
         <div className="form-group">
-          <div className="label">
-            <label htmlFor="name">Message </label>
-          </div>
           <input
+            autocomplete="off"
             className="form-control"
             required
             type="text"
@@ -70,6 +73,10 @@ function Contact() {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
+          <div className="label">
+            <label htmlFor="name">Message </label>
+          </div>
+          <div className="error">1</div>
         </div>
         <button type="submit" className="submitBtn">
           Submit

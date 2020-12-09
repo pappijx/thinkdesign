@@ -8,9 +8,8 @@ function Portfolio() {
     <div className="portfolio">
       <h1>This is portfolio</h1>
       <p className="portfolioDescription">
-        From Web Components and UI/UX animations to React.JS, Redux, Vue.JS, and
-        Node.JS. Check out my latest web software development portfolio
-        projects.
+        From Web Components and UI/UX animations to React.JS .Check out my
+        latest web software development portfolio projects.
       </p>
       <div className="Projectscontainer">
         {Data.map((data, key) => {
