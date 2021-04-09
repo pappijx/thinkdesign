@@ -70,7 +70,7 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .socialmedia {
-    margin-top: 250px;
+    margin-top: 300px;
     position: fixed;
     display: flex;
     width: 100%;
