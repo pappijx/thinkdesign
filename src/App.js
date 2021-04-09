@@ -11,9 +11,9 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 function App() {
   return (
     <div className="app">
-      {/* <div className="app__splashScreen">
+      <div className="app__splashScreen">
         <SplashScreen />
-      </div> */}
+      </div>
       <Navbar />
       <Route
         render={({ location }) => (

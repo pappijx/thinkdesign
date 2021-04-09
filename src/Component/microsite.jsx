@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./microsite.css";
 
 function microsite({ data }) {
-  return <div></div>;
+  return <div>hello</div>;
 }
 
 export default microsite;

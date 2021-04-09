@@ -1,9 +1,9 @@
 .portfolio {
   padding-top: 50px;
   width: 100vw;
-  height: 600px;
+  height: 1000px;
   text-align: center;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 

@@ -10,19 +10,19 @@ function SocialMedia() {
     <div className="socialmedia">
       <ul className="socialmedia__holder">
         <li>
-          <img className="interactionHover" src={LinkedIn} alt="" />
+          <img className="interactionHover" src={LinkedIn} alt="LinkedIn" />
           <span className="tooltip">Follow me on LinkedIn</span>
         </li>
         <li>
-          <img className="interactionHover" src={Github} alt="" />
+          <img className="interactionHover" src={Github} alt="Github" />
           <span className="tooltip">Follow me on Github</span>
         </li>
         <li>
-          <img className="interactionHover" src={Facebook} alt="" />
+          <img className="interactionHover" src={Facebook} alt="Facebook" />
           <span className="tooltip">Follow me on Facebook</span>
         </li>
         <li>
-          <img className="interactionHover" src={Dribbble} alt="" />
+          <img className="interactionHover" src={Dribbble} alt="Dribbble" />
           <span className="tooltip">Follow me on Dribbble</span>
         </li>
       </ul>
